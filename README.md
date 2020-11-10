@@ -1,12 +1,12 @@
-#Web_HC_ZL_Slider
+# Web_HC_ZL_Slider
 網頁 赫綵中壢 輪播系統
 
-#範例
-https://kid421.github.io/Web_HC_ZL_Slider/
+# 範例
+https://qasw77564.github.io/Web_HC_ZL_Slider/
 
-##使用說明
-#CDN
-#架構
+## 使用說明
+# CDN
+# 架構
 ```
     <!-- data-slider-duration 自動播放時間 -->
     <div id="kid-slider" data-slider-duration="3000">

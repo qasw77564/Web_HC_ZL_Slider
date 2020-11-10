@@ -56,6 +56,7 @@
         z-index: 3;
         top: 50%;
         transform: translateY(-50%);
+        cursor: pointer;
     }
 
     #kid-prev {
@@ -64,12 +65,45 @@
     #kid-next {
         right: 0;
     }
+
+    #kid-buttons {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .kid-button {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background: #ffffff77;
+            border-radius: 50%;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .kid-button-active {
+            animation-name: kidButton;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;     // 停留在動畫結束的畫面 (backwords 相反)
+        }
+    }
 }
 
 // 動畫 animation 必須先額外設定動畫的效果
 // @關鍵影格 動畫名稱
 // 0% {} 開始時效果
 // 0% - 100% {}
+@keyframes kidButton{
+    0%{
+        background: #ffffff77;
+        animation-fill-mode: forwards;     // 停留在動畫結束的畫面 (backwards 相反)
+    }
+    100%{
+        background: #00000077;
+        animation-fill-mode: forwards;     // 停留在動畫結束的畫面 (backwards 相反)
+    }
+}
 @keyframes kidImage {
     0% {
         transform: scale(1.5);

@@ -61,6 +61,7 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  cursor: pointer;
 }
 
 #kid-slider #kid-prev {
@@ -69,6 +70,59 @@
 
 #kid-slider #kid-next {
   right: 0;
+}
+
+#kid-slider #kid-buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#kid-slider #kid-buttons .kid-button {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #ffffff77;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#kid-slider #kid-buttons .kid-button-active {
+  -webkit-animation-name: kidButton;
+          animation-name: kidButton;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes kidButton {
+  0% {
+    background: #ffffff77;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  100% {
+    background: #00000077;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+}
+
+@keyframes kidButton {
+  0% {
+    background: #ffffff77;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  100% {
+    background: #00000077;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
 }
 
 @-webkit-keyframes kidImage {

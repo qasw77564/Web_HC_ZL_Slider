@@ -6,6 +6,10 @@ https://qasw77564.github.io/Web_HC_ZL_Slider/
 
 ## 使用說明
 # CDN
+```
+<link rel="stylesheet" href="https://qasw77564.github.io/Web_HC_ZL_Slider/style.css">
+<script src="https://qasw77564.github.io/Web_HC_ZL_Slider/script.js"></script>
+```
 # 架構
 ```
     <!-- data-slider-duration 自動播放時間 -->
